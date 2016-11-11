@@ -85,9 +85,9 @@ print("[Android SDK] For APK with SDK found, APK using camera:", len(camera_list
 print("[Android SDK] For APK with SDK found, APK using both:", len(both_list.keys()), "\n")
 print("Retrieve SDK version of each APK file .. Completed !!\n")
 
-print("Print list of apk with sdk version ..\n")
+print("Print list of apk with sdk version (LOCATION) ..\n")
 print("SDK\tAPK file")
-for k, v in compiled_list.items():
+for k, v in location_list.items():
 	print(v, "\t", k)
 
 print("\n")
