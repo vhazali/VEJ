@@ -1,0 +1,38 @@
+
+UNIQUE_IDENTIFIER:
+<com.android.internal.telephony.IPhoneSubInfo$Stub$Proxy: java.lang.String getVoiceMailNumber()> android.permission.READ_PHONE_STATE (UNIQUE_IDENTIFIER)
+<com.android.internal.telephony.PhoneSubInfo: java.lang.String getSubscriberId()> android.permission.READ_PHONE_STATE (UNIQUE_IDENTIFIER)
+
+LOCATION_INFORMATION:
+<android.telephony.TelephonyManager: android.telephony.CellLocation getCellLocation()> android.permission.ACCESS_FINE_LOCATION (LOCATION_INFORMATION)
+<android.telephony.TelephonyManager: android.telephony.CellLocation getCellLocation()> android.permission.ACCESS_COARSE_LOCATION (LOCATION_INFORMATION)
+<com.android.internal.telephony.PhoneBase: void getPreferredNetworkType(android.os.Message)> android.permission.WAKE_LOCK (LOCATION_INFORMATION)
+
+NETWORK_INFORMATION:
+<android.net.wifi.IWifiManager$Stub$Proxy: android.net.wifi.WifiInfo getConnectionInfo()> android.permission.ACCESS_WIFI_STATE (NETWORK_INFORMATION)
+
+ACCOUNT_INFORMATION:
+<android.test.IsolatedContext$MockAccountManager: android.accounts.AccountManagerFuture getAuthToken(android.accounts.Account,java.lang.String,boolean,android.accounts.AccountManagerCallback,android.os.Handler)> android.permission.MANAGE_ACCOUNTS (ACCOUNT_INFORMATION)
+<android.test.IsolatedContext$MockAccountManager: android.accounts.AccountManagerFuture getAuthToken(android.accounts.Account,java.lang.String,boolean,android.accounts.AccountManagerCallback,android.os.Handler)> android.permission.GET_ACCOUNTS (ACCOUNT_INFORMATION)
+<android.accounts.AccountManager: java.lang.String peekAuthToken(android.accounts.Account,java.lang.String)> android.permission.AUTHENTICATE_ACCOUNTS (ACCOUNT_INFORMATION)
+<android.accounts.AccountManager: android.accounts.AccountManagerFuture getAuthToken(android.accounts.Account,java.lang.String,boolean,android.accounts.AccountManagerCallback,android.os.Handler)> (ACCOUNT_INFORMATION)
+<android.accounts.AccountManagerService: android.accounts.Account[] getAccounts(java.lang.String)> android.permission.GET_ACCOUNTS (ACCOUNT_INFORMATION)
+<android.test.IsolatedContext$MockAccountManager: android.accounts.AccountManagerFuture getAuthToken(android.accounts.Account,java.lang.String,boolean,android.accounts.AccountManagerCallback,android.os.Handler)> android.permission.USE_CREDENTIALS (ACCOUNT_INFORMATION)
+
+BLUETOOTH_INFORMATION:
+<android.bluetooth.BluetoothDevice: java.lang.String getName()> android.permission.BLUETOOTH (BLUETOOTH_INFORMATION)
+<android.bluetooth.IBluetoothPbap$Stub$Proxy: android.bluetooth.BluetoothDevice getClient()> android.permission.BLUETOOTH (BLUETOOTH_INFORMATION)
+
+SYNCHRONIZATION_DATA:
+<android.content.ContentResolver: android.content.SyncStatusInfo getSyncStatus(android.accounts.Account,java.lang.String)> (SYNCHRONIZATION_DATA)
+<android.test.mock.MockContentResolver: android.content.SyncStatusInfo getSyncStatus(android.accounts.Account,java.lang.String)> android.permission.READ_SYNC_STATS (SYNCHRONIZATION_DATA)
+
+SMS_MMS:
+<android.provider.Telephony$Sms: android.database.Cursor query(android.content.ContentResolver,java.lang.String[])> android.permission.RECEIVE_SMS (SMS_MMS)
+<com.google.android.mms.pdu.DeliveryInd: byte[] getMessageId()> android.permission.STOP_APP_SWITCHES (SMS_MMS)
+
+SYSTEM_SETTINGS:
+<com.android.internal.telephony.PhoneBase: void getSmscAddress(android.os.Message)> (SYSTEM_SETTINGS)
+<com.android.internal.telephony.RIL: void getSmscAddress(android.os.Message)> android.permission.WAKE_LOCK (SYSTEM_SETTINGS)
+<com.android.internal.telephony.PhoneBase: void getSmscAddress(android.os.Message)> android.permission.WAKE_LOCK (SYSTEM_SETTINGS)
+<com.android.internal.telephony.gsm.GSMPhone: void getSmscAddress(android.os.Message)> android.permission.WAKE_LOCK (SYSTEM_SETTINGS)

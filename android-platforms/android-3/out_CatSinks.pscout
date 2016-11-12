@@ -1,0 +1,7 @@
+
+NETWORK:
+<java.net.URL: java.net.URLConnection openConnection()> android.permission.INTERNET (NETWORK)
+
+LOG:
+<android.util.Log: int println(int,java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES (LOG)
+<android.util.Log: int v(java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES (LOG)

@@ -1,0 +1,4 @@
+
+LOCATION_INFORMATION:
+<android.telephony.TelephonyManager: android.telephony.CellLocation getCellLocation()> android.permission.ACCESS_COARSE_LOCATION (LOCATION_INFORMATION)
+<android.telephony.TelephonyManager: android.telephony.CellLocation getCellLocation()> android.permission.ACCESS_FINE_LOCATION (LOCATION_INFORMATION)
