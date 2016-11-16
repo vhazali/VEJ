@@ -1,0 +1,1 @@
+java -Xmx4g -cp susi\weka.jar;flowdroid\soot-trunk.jar;flowdroid\soot-infoflow.jar;flowdroid\soot-infoflow-android.jar;susi\susi.jar de.ecspride.sourcesinkfinder.SourceSinkFinder android.jar permissionMethodWithLabel.pscout out.pscout
