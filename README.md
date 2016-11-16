@@ -17,4 +17,4 @@ Very Easy Job — A program to simplify the process of taint analysis using Flow
  1. Ensure that it is a fully-implemented Android JAR file and not one that ships with Google's Android SDK
  2. Platform JAR files that ships with Google's Android SDK contains method stubs and are not suitable for SuSi
  3. Fully-implemented Android JAR files can be extracted from an emulator or a real phone.
-3. Run the susi.bat (Windows) or runSuSi.sh (Mac) to generate the new source sink lists
+3. Run the susi.bat (Windows) or susi.sh (Mac) to generate the new source sink lists
