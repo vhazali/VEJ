@@ -86,7 +86,7 @@ for k, v in location_list.items():
 	sdk_version = v
 	apk_file = k
 	apk_filename = apk_file[4:]
-	sdk_file = "android-platforms\\android-" + sdk_version + "\\android.jar"
+	sdk_file = "android-platforms/android-" + sdk_version + "/android.jar"
 	filename = taint_directory + "/" + apk_filename + ".xml"
 
 	# filter and compile source and sink
