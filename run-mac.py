@@ -19,7 +19,8 @@ def phase1():
 	print("[AAPT] Retrieve SDK version of each APK file ..")
 	for apk in my_list:
 		apk_path = apk_dir + apk
-		proc = subprocess.Popen(["./aapt", "dump", "badging", apk_path], stdout=subprocess.PIPE, shell=True)
+		aapt_cmd = "aapt dump badging " + apk_path
+		proc = subprocess.Popen(aapt_cmd, stdout=subprocess.PIPE, shell=True)
 		(out, err) = proc.communicate()
 
 		sdk_byte = None
@@ -59,7 +60,7 @@ def phase1():
 def getFileContent(file_path):
 	content = None
 	with open(file_path) as f:
-	    content = f.read()
+		content = f.read()
 	f.close()
 	return content
 
