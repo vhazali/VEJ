@@ -124,7 +124,7 @@ for k, v in location_list.items():
 	print("[Flowdroid] Start Taint Analysis on", apk_filename)
 
 	if os.path.isfile(sdk_file): # Continue if sdk exists
-		proc = subprocess.Popen(["java", "-Xmx4g", "-cp", "soot-trunk.jar;soot-infoflow.jar;soot-infoflow-android.jar;slf4j-api-1.7.5.jar;slf4j-simple-1.7.5.jar;axml-2.0.jar", "soot.jimple.infoflow.android.TestApps.Test", apk_file, sdk_file, "--saveresults", filename], stderr=subprocess.STDOUT, stdout=subprocess.PIPE).communicate()[0]
+		proc = subprocess.Popen(["java", "-Xmx4g", "-cp", "soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar", "soot.jimple.infoflow.android.TestApps.Test", apk_file, sdk_file, "--saveresults", filename], stderr=subprocess.STDOUT, stdout=subprocess.PIPE).communicate()[0]
 		
 		if os.path.isfile(filename):
 			print("[Flowdroid] Found possible source & sink for", apk_filename, ". Results saved into", filename)
